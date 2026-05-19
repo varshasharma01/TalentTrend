@@ -1,1 +1,6 @@
 pymongo
+selenium
+webdriver-manager 
+pymongo 
+pandas 
+python-dotenv
