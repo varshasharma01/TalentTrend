@@ -1,7 +1,10 @@
 from pymongo import MongoClient # pyright: ignore[reportMissingImports]
+# import dotenv
+import os
 
 def get_db():
-    client = MongoClient('mongodb+srv://varshasinbox1_db_user:Varsha%401700@cluster0.9f396vf.mongodb.net/')
+   
+    client = MongoClient(os.getenv('MONGO_URI'))
     db = client['TalentTrend']
     print("Connected to MongoDB")
     return db
